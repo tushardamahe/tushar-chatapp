@@ -1,10 +1,11 @@
-import Cam from "../img/cam.png";
-import Add from "../img/add.png";
-import More from "../img/more.png";
 import Messages from "./Messages";
 import Input from "./Input";
 import { useContext } from "react";
 import { ChatContext } from "../context/ChatContext";
+
+import VideoCallIcon from "@mui/icons-material/VideoCall";
+import PersonAddAltIcon from "@mui/icons-material/PersonAddAlt";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 
 const Chat = () => {
   const { data } = useContext(ChatContext);
@@ -13,9 +14,9 @@ const Chat = () => {
       <div className="chatInfo">
         <span>{data.user?.displayName}</span>
         <div className="chatIcons">
-          <img src={Cam} alt="" />
-          <img src={Add} alt="" />
-          <img src={More} alt="" />
+          <VideoCallIcon className="img" />
+          <PersonAddAltIcon className="img" />
+          <MoreHorizIcon className="img" />
         </div>
       </div>
       <Messages />

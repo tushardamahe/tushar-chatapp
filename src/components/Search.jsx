@@ -13,6 +13,8 @@ import {
 import { db } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
 
+import SearchIcon from "@mui/icons-material/Search";
+
 const Search = () => {
   const [username, setUsername] = useState("");
   const [user, setUser] = useState(null);
@@ -85,6 +87,7 @@ const Search = () => {
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
+        <SearchIcon className="searchIcon"/>
       </div>
       {err && <span>User Not Found!</span>}
       {user && (

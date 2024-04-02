@@ -1,6 +1,5 @@
 import { useContext, useState } from "react";
-import Attach from "../img/attach.png";
-import Img from "../img/img.png";
+
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
 import {
@@ -13,6 +12,9 @@ import {
 import { db, storage } from "../firebase";
 import { v4 as uuid } from "uuid";
 import { getDownloadURL, ref, uploadBytesResumable } from "firebase/storage";
+
+import AddPhotoAlternateIcon from '@mui/icons-material/AddPhotoAlternate';
+import AttachFileIcon from '@mui/icons-material/AttachFile';
 
 const Input = () => {
   const [text, setText] = useState("");
@@ -75,7 +77,7 @@ const Input = () => {
         value={text}
       />
       <div className="send">
-        <img src={Attach} alt="" />
+        <AttachFileIcon className="img" />
         <input
           type="file"
           style={{ display: "none" }}
@@ -83,7 +85,7 @@ const Input = () => {
           onChange={(e) => setImg(e.target.files[0])}
         />
         <label htmlFor="file">
-          <img src={Img} alt="" />
+          <AddPhotoAlternateIcon className="img" />
         </label>
         <button onClick={handleSend}>Send</button>
       </div>
