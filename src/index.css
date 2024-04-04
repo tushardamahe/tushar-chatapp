@@ -5,19 +5,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .example-element {
-    font-size: 16px;
-  }
+  
 }
 
 @media screen and (max-width: 1200px) {
-  .example-element {
-    font-size: 18px;
-  }
+  .pacifico-regular {
+    font-size: 14px; /* Adjust the font size as per your requirement */
+}
 }
 
 body {
-  background-color: #a7bcff;
+  background-color: #DDE6ED;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -109,12 +107,12 @@ body {
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      background-color: #526D82;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #27374D;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
@@ -122,11 +120,12 @@ body {
 
         .logo {
           font-weight: bold;
+          font-family: Blacker;
         }
 
         .user {
           display: flex;
-          gap: 10px;
+          gap: 15px;
 
           img {
             background-color: #ddddf7;
@@ -170,7 +169,7 @@ body {
         }
         .searchIcon {
           position: absolute;
-          right: 20px;
+          right: 10px;
           color: white;
         }
       }
@@ -212,16 +211,20 @@ body {
 
       .chatInfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #9DB2BF;
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
-        color: lightgray;
+        color: white;
+      }
+
+      span {
+        padding-left: 10px;
       }
       .chatIcons {
         display: flex;
-        gap: 10px;
+        gap: 20px;
 
         .img {
           height: 24px;
@@ -230,14 +233,14 @@ body {
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-color: #E3EBF2;
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
 
         .message {
           display: flex;
-          gap: 20px;
+          gap: 10px;
           margin-bottom: 20px;
 
           .messageInfo {
@@ -251,6 +254,11 @@ body {
               height: 40px;
               border-radius: 50%;
               object-fit: cover;
+            }
+
+            span {
+              font-size: 15px;
+              padding-left: 0;
             }
           }
           .messageContent {
@@ -277,7 +285,7 @@ body {
             .messageContent {
               align-items: flex-end;
               p {
-                background-color: #8da4f1;
+                background-color: #6C849D;
                 color: white;
                 border-radius: 10px 0px 10px 10px;
               }
@@ -315,6 +323,7 @@ body {
             height: 24px;
             cursor: pointer;
             color: grey;
+            padding: 0 5px;
           }
 
           button {
@@ -322,11 +331,16 @@ body {
             border-radius: 25px;
             padding: 10px 15px;
             color: white;
-            background-color: #8da4f1;
+            background-color: #526D82;
             cursor: pointer;
           }
         }
       }
     }
   }
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

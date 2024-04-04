@@ -29,7 +29,7 @@ const Message = ({ message }) => {
         <span>Just Now</span>
       </div>
       <div className="messageContent">
-        {message.text && <p>{message.text}</p>}
+        <p>{message.text}</p>
         {message.img && <img src={message.img} alt="" />}
       </div>
     </div>

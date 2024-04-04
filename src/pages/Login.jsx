@@ -24,7 +24,7 @@ const Login = () => {
     <>
       <div className="formContainer">
         <div className="formWrapper">
-          <span className="logo">Frost ChatApp</span>
+          <span className="logo">Tushar Damahe ChatApp</span>
           <span className="title">Login</span>
           <form onSubmit={handleSubmit}>
             <input type="email" placeholder="Enter Email" />
